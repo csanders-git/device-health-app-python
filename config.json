@@ -1,27 +1,56 @@
 {
+  "individual_health_check_durations_millis": {
+    "device_id": 0.29899999999999999,
+    "password": 119.491,
+    "auto_login": 0.36499999999999999,
+    "security_agents_total": 288.42599999999999,
+    "os_version": 0.124,
+    "virtual_machine": 0.042999999999999997,
+    "firewall": 0.26700000000000002,
+    "encryption": 122.325,
+    "device_name": 0.80100000000000005
+  },
   "health_check_start_timestamp": "2021-11-12 23:38:02",
-  "browser": "<marquee>alert(1);</marquee>",
-  "browser_version": "<marquee>alert(1);</marquee>",
-  "flash_version": "<marquee>alert(1);</marquee>",
-  "java_version": "<marquee>alert(1);</marquee>",
-  "host_name": "<marquee>alert(1);</marquee>",
-  "ip": "<marquee>alert(1);</marquee>",
+  "user_configuration": {
+    "app_updates_enabled": true,
+    "auto_launch_enabled": true,
+    "diagnostic_log_enabled": true
+  },
+  "is_health_check_retrying": false,
+  "deployment_track": "release",
+  "browser": "Spoofed!",
+  "browser_version": "Spoofed!",
+  "browser_process_name": "Firefox",
+  "browser_label": "Spoofed!",
+  "flash_version": "Spoofed!",
+  "java_version": "Spoofed!",
+  "host_name": "Spoofed!",
+  "ip": "1.2.3.4",
   "is_password_set": true,
   "health_check_end_timestamp": "2021-11-12 23:38:03",
   "is_auto_login_enabled": false,
   "os": "macOS",
   "is_encryption_enabled": true,
-  "device_id": "DE13DE13-23F28-57A7-B81E-B81E7AE23F28",
-  "deployment_track": "release",
+  "device_id": "12345678-23F28-1234-1234-B81E7AE12345",
   "is_firewall_enabled": true,
   "duo_client_version": "3.4.0.0",
-  "os_version": "<marquee>alert(1);</marquee>",
-  "device_name": "<marquee>alert(1);</marquee>",
+  "is_virtual_machine": true,
+  "os_version": "Spoofed!",
+  "device_name": "Spoofed!",
   "health_check_length_millis": 540.579,
-  "os_build": "<marquee>alert(1);</marquee>",
+  "os_build": "Spoofed!",
   "communication_scheme": "http",
-  "security_agents": {
-    "security_agent": "carbon-black",
-    "version": "3.5.3.82"
-  }
+  "system_configuration": {
+    "row_password_hidden": false,
+    "row_updates_hidden": false,
+    "row_firewall_hidden": false,
+    "row_encryption_hidden": false,
+    "row_app_hidden": false
+  },
+  "security_agents": [{
+    "product_label": "carbon-black",
+    "is_active": true,
+    "version": "1.2.3.4"
+  }]
 }
+
